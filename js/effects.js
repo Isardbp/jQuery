@@ -1,16 +1,16 @@
 $(document).ready(function(){
   //hide-show click
   $("#delete").click(function(){
-    $("p").hide();
+    $("#p_hide_show").hide();
   });
   $("#show").click(function(){
-    $("p").show();
+    $("#p_hide_show").show();
   });
   $("#delete_slow").click(function(){
-    $("p").hide(1000);
+    $("#p_hide_show").hide(1000);
   });
   $("#show_fast").click(function(){
-    $("p").show(100);
+    $("#p_hide_show").show(100);
   });
   //Fading
   //fadeIn fadeOut fadeToggle fadeTo
@@ -59,15 +59,32 @@ $(document).ready(function(){
     });
   });
   $("#animation_continued").click(function(){
-    var div = $("div");
+    var div = $("#div_animation");
     div.animate({height: '300px', opacity: '0.4'}, "slow");
     div.animate({width: '350px', opacity: '0.8'}, "slow");
     div.animate({height: '100px', opacity: '0.4'}, "slow");
     div.animate({width: '150px', opacity: '0.8'}, "slow");
     });
     $("#animation_text_big").click(function(){
-        var div = $("div");
+        var div = $("#div_animation");
         div.animate({left: '100px'}, "slow");
         div.animate({fontSize: '3em'}, "slow");
     });
+    //stop()
+    $('#flip').click(function(){
+      $('#panel').slideDown(5000);
+    });
+    $('#stop').click(function(){
+      $('#panel').stop();
+    });
+    //callback
+    $('#callback').click(function(){
+      $('#p_callback').hide("slow", function(){
+        alert("The paragraph is now hidden");
+      })
+    })
+    //Chaining (change color)
+    $("#chaining").click(function(){
+       $("#p_chaining").css("color", "red").slideUp(2000).slideDown(2000);
+   });
 });

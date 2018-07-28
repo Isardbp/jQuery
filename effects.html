@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>jQuery</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/effects.css">
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/effects.js"></script>
   </head>
   <body>
-    <h1>Test jQuery</h1>
+    <h1>Test jQuery Effects</h1>
     <!--hide-show click-->
-    <p>Text Text Text</p>
+    <p id="p_hide_show">Text Text Text</p>
     <button id="delete">ClickMe to hide</button>
     <button id="show"> ClickMe to show</button>
     <button id="delete_slow">ClickMe to hide with slow speed</button>
@@ -29,7 +29,8 @@
     <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
     <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 
-    <br><br><br>
+    <br>
+    <!--Animations-->
 
     <button id="animation_left">ClickMe to start animation left</button>
     <button id="animation_left_big_opacity">ClickMe to start animation lift big opacity</button>
@@ -41,5 +42,22 @@
     <br><br>
     <div id="div_animation" style="background:#98bf21;height:100px;width:150px;position:absolute;">Hello</div>
 
+  <br><br><br><br><br><br>
+  <!--stop()-->
+  <button id="stop">Stop sliding</button>
+  <div id="flip">Click to slide down panel</div>
+  <div id="panel">Hello world!</div>
+
+  <br><br>
+
+  <!--Callback Functions-->
+  <button id="callback">Hide</button>
+  <p id="p_callback">This is a paragraph with little content.</p>
+
+  <br>
+  <!--Chaining (change color)-->
+
+  <p id="p_chaining">jQuery is fun!!</p>
+  <button id="chaining">Click me</button>
   </body>
 </html>
