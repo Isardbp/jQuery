@@ -46,4 +46,28 @@ $(document).ready(function(){
         width: '150px'
     });
   });
+  $('#animation_onclick_big').click(function(){
+    $('#div_animation').animate({
+      left: '250px',
+      height: '+=150px',
+      width: '+=150px'
+    });
+  });
+  $('#animation_toggle').click(function(){
+    $('#div_animation').animate({
+      height: 'toggle'
+    });
+  });
+  $("#animation_continued").click(function(){
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '350px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '150px', opacity: '0.8'}, "slow");
+    });
+    $("#animation_text_big").click(function(){
+        var div = $("div");
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
 });
