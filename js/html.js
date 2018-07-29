@@ -54,7 +54,6 @@ $(document).ready(function() {
     $("#insert_before").click(function(){
         $("img").before("<b>Before</b>");
     });
-
     $("#insert_after").click(function(){
         $("img").after("<i>After</i>");
     });
@@ -64,5 +63,37 @@ $(document).ready(function() {
     });
     $("#empty").click(function(){
      $("#div1").empty();
+    });
+    $("#remove_element_class").click(function(){
+      $("p").remove(".test, .demo");
+    });
+    //Get and Set CSS Classes
+    $("#css_classes").click(function(){
+      $("#div2").addClass("important blue");
+   });
+   $("#delete_css_class").click(function(){
+      $("#div2").removeClass("important blue");
+   });
+   $("#toggle_css_class").click(function(){
+      $("#div2").toggleClass("important blue");
+   });
+   // .css()
+   $("#button_css").click(function() {
+      $("#change_css").css({
+         "background-color" : "rgb(43, 228, 184)",
+         "font-size" : "200%"
+      });
+   });
+   // Dimensions
+   $("#button_dimensions").click(function(){
+        var txt = "";
+        txt += "Width of div: " + $("#div1").width() + "</br>";
+        txt += "Height of div: " + $("#div1").height() + "</br>";
+        txt += "Outer width of div (margin included): " + $("#div1").outerWidth(true) + "</br>";
+        txt += "Outer height of div (margin included): " + $("#div1").outerHeight(true);
+        $("#div_dimensions").html(txt);
+    });
+    $("#more_dimm").click(function(){
+        $("#divvv").width(500).height(500);
     });
 });
