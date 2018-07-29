@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>html</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/html.js"></script>
+    <link rel="stylesheet" href="css/html.css"/>
+    </script>
+  </head>
+  <body>
+    <!--.text() .html() .val() .attr()-->
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+    <button id="text_but">Show text</button>
+    <button id="html_but">Show html</button>
+    <br>
+
+    <p>Name: <input type="text" id="test_input" value="Mickey Mouse"></p>
+    <button id="input_button">Show Value</button>
+    <br>
+
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+    <button id="attr_button">Show href Value</button>
+
+    <!--Set Content and Attributes-->
+    <p id="test1">This is a paragraph.</p>
+    <p id="test2">This is another paragraph.</p>
+
+    <p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+    <br>
+
+    <p id="test4">This is a <b>bold</b> paragraph.</p>
+    <p id="test5">This is another <b>bold</b> paragraph.</p>
+
+    <button id="btn4">Show Old/New Text</button>
+    <button id="btn5">Show Old/New HTML</button>
+
+    <p><a href="https://www.w3schools.com" id="link">W3Schools.com</a></p>
+    <button id="link_button">Change href Value</button>
+
+    <br>
+    <!--Add Elements-->
+
+    <p class="p">This is a paragraph.</p>
+    <p class="p">This is another paragraph.</p>
+
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ol>
+
+    <button id="append_text">Append text</button>
+    <button id="append_list_item">Append list items</button>
+    <button id="prepend_text">Prepend text</button>
+    <button id="prepend_list_item">Prepend list items</button>
+    <br><br><br>
+
+    <img src="/images/w3jquery.gif" alt="jQuery" width="100" height="140"><br><br>
+    <button id="insert_before">Insert before</button>
+    <button id="insert_after">Insert after</button>
+
+    <!--Remove Elements-->
+    <br><br>
+    <div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+    This is some text in the div.
+    <p>This is a paragraph in the div.</p>
+    <p>This is another paragraph in the div.</p>
+    </div>
+    <button id="remove">Remove div</button>
+    <button id="empty">Empty div</button>
+  </body>
+</html>
